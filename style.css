@@ -1,0 +1,254 @@
+body, html {
+    margin: 0;
+    color: rgb(71, 71, 71);
+    font-family: 'Open Sans', sans-serif;
+}
+#hero-banner h1 {
+    text-align: center;
+    display: inline-block;
+    font-size: 3em;
+    width: 100%;
+}
+#hero-banner h2{
+    text-align: center;
+    display: inline-block;
+    font-size: 2.5em;
+    width: 100%;
+}
+#navbar {
+    position: absolute;
+    top: 100px;
+}
+#navbar a {
+    font-size: 1.5em;
+    display: block;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    margin: 30px 0;
+}
+#navbar ul {
+    list-style-type: none;
+}
+#hero-banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-image: url(RoseMoon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;
+}
+#hero-banner img {
+    width: 100vw;
+}
+
+@media (max-width: 600px) {
+    #navbar{
+        /* top: 10px;
+        left: 10px; */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        top: 0px;
+        width: 100%;
+        /* margin: 5px auto; */
+    }
+    #navbar ul {
+        margin: 0 auto;
+    }
+    #navbar li {
+        display: inline-block;
+        padding: 5px;
+        margin: 0 10px;
+    }
+    #navbar a {
+        text-decoration: underline; 
+    }
+}
+
+/* Selector not() */
+
+/********************/
+/* About Me Section */
+
+#about-me h2 {
+    padding: 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#about-me {
+    background-color: lightgray;
+    padding: 30px 0;
+}
+#about-me p {
+    width: 100%;
+    padding: 20px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+#profile-div {
+    border: 0px solid black;
+}
+#profile-div div {
+    width: 100%;
+}
+#profile-div p {
+    padding: 20px 0;
+    margin: 20px auto;
+    text-align: center;
+}
+#profile-div img {
+    display: block;
+    margin: 0 auto;
+}
+#lang img {
+    display: inline-block;
+    margin: 0 10px;
+}
+#lang {
+    display: flex;
+    justify-content: center;   
+    justify-items: center;
+}
+
+#tech {
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+#tech label {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #f4ddf9;
+    min-width: 50px;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 7px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/************/
+/*Portfolio*/
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: lightgrey;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+
+@media (max-width: 28.75em) {
+    .projects-section-header {
+        font-size: 4rem;
+    }
+}
+
+
+/* "Automagic" image grid using no media queries */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+    .projects-section {
+        padding: 6rem 1rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+    color: #ff7f50;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+    background: var(--main-red);
+}
+
+.btn-show-all:hover>i {
+    transform: translateX(2px);
+}
+
+.btn-show-all>i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 28.75em) {
+    .projects-section-header {
+        font-size: 3rem;
+    }
+}
+
+/************/
+/*Contact section*/
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background-image: url('./img/moon6.gif') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+    color: white;
+}
