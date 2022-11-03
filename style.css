@@ -34,7 +34,7 @@ body, html {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    background-image: url(RoseMoon.jpg);
+    background-image: url('./img/RoseMoon.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -239,7 +239,7 @@ body, html {
 .contact-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -251,4 +251,15 @@ body, html {
     background-position: center center;
     min-height: 400px;
     color: white;
+}
+
+/* Footer */
+.contact-links a{
+    color: white;
+}
+#contact h2, 
+#contact p{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
