@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <main>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="hero-banner">
+            <!-- <img src="RoseMoon.jpg" alt="Banner"> -->
+            <h1>Portafolio</h1>
+            <h2>Desarrollador Web</h2>
+        </section>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>+200 years of experience as a developer in only 30 years.</p>
+            <div id="profile-div">
+                <img src="img/hacker.png" width="300px" alt="Profile">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, possimus?</p>
+                <div id="lang">
+                    <img src="img/japan.png" width="64" alt="Japan">
+                    <img src="img/spain.png" width="64" alt="Spain">
+                    <img src="img/united-kingdom.png" width="64" alt="UK">
+                </div>
+                <div id="tech">
+                    <label>HTML</label>
+                    <label>CSS</label>
+                    <label>JS</label>
+                    <label>SQL</label>
+                    <label>Team player</label>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div>
+            <section id="projects" class="projects-section">
+                <h2 class="projects-section-header">These are some of my projects</h2>
+        
+                <div class="projects-grid">
+                    <a href="" target="_blank" class="project project-tile">
+                        <img class="project-image" src="https://via.placeholder.com/100x50"
+                            alt="project" />
+                        <p class="project-title">
+                            <span class="code">&lt;</span> Tribute page
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+                    <a href="" target="_blank" class="project project-tile">
+                        <img class="project-image" src="https://via.placeholder.com/100x50"
+                            alt="project" />
+                        <p class="project-title">
+                            <span class="code">&lt;</span> Documentation website
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+                    <a href="" target="_blank" class="project project-tile">
+                        <img class="project-image" src="https://via.placeholder.com/100x50"
+                            alt="project" />
+                        <p class="project-title">
+                            <span class="code">&lt;</span> Product Landing page
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+
+                    <div onclick="openProject(1)" style="cursor: pointer">
+                        <!-- <a href="#" target="_blank" class="project project-tile"> -->
+                            <img class="project-image" src="https://via.placeholder.com/100x50"
+                                alt="project" />
+                            <p class="project-title">
+                                <span class="code">&lt;</span> Survey Form
+                                <span class="code">&#47;&gt;</span>
+                            </p>
+                        <!-- </a> -->
+                    </div>
+                    
+
+                    <a href="" target="_blank" class="project project-tile">
+                        <img class="project-image" src="https://via.placeholder.com/100x50" alt="project">
+                    
+                        <p class="project-title">
+                            <span class="code">&lt;</span> Validation Login Form
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+                </div>
+        
+                <a href="" class="btn btn-show-all" target="_blank">Show all<i class="fas fa-chevron-right"></i
+              ></a>
+            </section>
+            
+        </section>
+        <section id="contact">
+            <div>
+            <section id="contact" class="contact-section">
+                <div class="contact-section-header">
+                 <!-- <img src="Moon6.gif" alt="Contact"> -->   
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+        </div>
+        
+        <!-- Desde aquí pasar al Footer fuera del main -->
+        <div class="contact-links">
+            <a href="" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        
+        <a
+          id="profile-link"
+          href="https://github.com/VizarD-0/efrenTM.github.io"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href=""
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-linkedin"></i>Linkedin</a
+        >
+        <a href="efren.lagmay@gmail.com" class="btn contact-details"
+          ><i class="fas fa-at"></i> Send a mail</a
+        >
+        <a href="tel:+34690045243" class="btn contact-details"
+          ><i class="fas fa-mobile-alt"></i> Call me</a
+        >
+        </div>
+
+        </section>
+    </main>
+    <!-- Footer -->
+</body>
+</html>
